@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class SavingsAccount {
+
+	
+		long id;
+		double balance=0;
+		double withdraw;
+		double deposite;
+		
+	public  SavingsAccount(double balance)
+		{
+		this.balance =balance;
+			
+		}
+		
+	void deposit(double deposite)
+	{
+		Scanner dep = new Scanner(System.in);
+		System.out.println("enter the deposite amount ");
+		double amount = dep.nextInt();
+		balance= balance+ amount;
+	}
+	
+	void withdraw(double amount)
+	{
+		Scanner with = new Scanner(System.in);
+		System.out.println("enter the withdraw amount ");
+		 amount = with.nextInt();
+		balance= balance+ amount;
+	}
+
+		void display()
+		{
+			System.out.println("balance: "+ balance);
+		}
+
+public static void main (String[] args) {
+	
+} 
+}
+
+

@@ -1,0 +1,19 @@
+
+public class IllegalArgumentException {
+	
+		private String display;
+			IllegalArgumentException(String display) {
+				super(display);
+				this.display = display;
+			}
+			IllegalArgumentException() {
+				super("illegal argument");
+				this.display = display;	
+			}
+			
+			public String getDisplay() {
+				return display;
+			}
+		
+
+}

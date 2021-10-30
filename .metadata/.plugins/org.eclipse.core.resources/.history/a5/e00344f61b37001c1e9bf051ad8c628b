@@ -1,0 +1,27 @@
+package amstrongrange;
+import java.util.Scanner;
+public class amstrongrange {
+
+	public static void main(String[] args) {
+
+		System.out.println("enter the numbers for range");
+				
+		Scanner Scn =new Scanner(System.in);
+			int a = Scn.nextInt();
+			int b = Scn.nextInt();
+				
+			for(int i=a; i<=b; i++)
+			{	int n =i;
+				int len =(n+ "").length();
+				int sum=0;
+				while(n>0)
+				{
+				sum = (int)Math.pow(n%10, len);
+				n=n/10;
+				}
+			}
+			if(sum == i)
+			System.out.println(i);
+	}
+
+}

@@ -1,0 +1,42 @@
+import java.util.Scanner
+package amstrong;
+
+public class amstrong {
+
+	public static void main(String[] args) {
+		System.out.println("enter the number");
+		Scanner Scn =new Scanner(System.in);
+		int num = Scn.nextInt();
+		
+		
+		int temp= num;
+		int sum = 0;
+		int len=(num+"").length();
+		for(int i=1;i<len;i++)
+		{	
+			while(num >0)
+				{
+					num=num%10;
+					int p=(int)Math.pow(num, len);
+				}
+			sum= p+sum;
+			num=num/10;
+		}	
+	if  (sum==temp)
+		System.out.println(" number is amstrong");
+	else 
+		System.out.println("number is not amstrong");
+		
+	
+		
+		
+		
+		
+		
+		
+		}
+		sum==temp;
+		System.out.println("number is amstrong");
+	}
+
+}

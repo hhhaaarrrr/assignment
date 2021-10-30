@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class simpleandcompoundinterest {
+
+	public static void main(String[] args) {
+		double si,ci,p,time,rate;
+		Scanner scn = new Scanner(System.in);
+			p = scn.nextInt();
+		System.out.println("enter the principle amount ");
+			time = scn.nextInt();
+		System.out.println("enter the time ");
+			rate = scn.nextInt();
+		System.out.println("enter the rate of interest ");
+		
+		si=(p*time*rate)/100;
+		System.out.println("simple interest is: "+ si);
+	
+	
+	
+	
+	}
+
+
+}

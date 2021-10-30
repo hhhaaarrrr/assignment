@@ -1,0 +1,26 @@
+package amstrongrange;
+
+public class amstrongrange {
+
+	public static void main(String[] args) {
+
+		int a = 100;
+		int b = 999;
+		System.out.println(" numbers for range"+ a + "  " +b); 
+			
+				
+			for(int i=100; i<=999; i++)
+			{	int n = i;
+				int len =(n+ "").length();
+				int sum=0;
+				while(n>0)
+				{
+				sum = (int)Math.pow(n%10, len);
+				n=n/10;
+				}
+			}
+			if(sum == i)
+			System.out.println(i);
+	}
+
+}

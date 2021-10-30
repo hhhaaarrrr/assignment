@@ -1,0 +1,24 @@
+package amstrongrange;
+
+public class amstrongrange {
+
+	public static void main(String[] args) {
+
+	
+		System.out.println("amstrong numbers form 100 to 999"); 
+			
+				
+			for(int i=100; i<=999; i++)
+			{	int n = i;
+				int sum=0;
+				while(n>0)
+				{
+				sum = (int)Math.pow(n%10, len);
+				n=n/10;
+				}
+			}
+			if(sum == i)
+			System.out.println(i);
+	}
+
+}

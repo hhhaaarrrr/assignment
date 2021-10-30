@@ -1,0 +1,33 @@
+
+public class exception {
+
+	public static void main(String[] args) {
+
+		SavingsAccount sv =new SavingsAccount();
+		{
+			sv.deposite(100000);
+			
+		System.out.println("Your Balance is :"+ sv.balance());
+		
+		sv.deposite(3000);
+		System.out.println("Your Balance is :"+ sv.balance());
+		
+		sv.withdraw(2000);
+		System.out.println("Your Balance is :"+ sv.balance());
+		
+		sv.withdraw(2221000);
+		System.out.println("Your Balance is :"+ sv.balance());
+		}
+		
+}	
+		
+		
+		
+		
+		
+		
+		
+		}
+	}
+
+}
