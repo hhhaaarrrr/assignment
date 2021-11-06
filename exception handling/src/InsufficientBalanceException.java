@@ -1,5 +1,5 @@
 
-public class InsufficientBalanceException extends exception{
+public class InsufficientBalanceException extends Exception{
 
 		private String display;
 			InsufficientBalanceException(String display) {
