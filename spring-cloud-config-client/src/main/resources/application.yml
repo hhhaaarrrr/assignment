@@ -1,0 +1,22 @@
+my:
+  greeting: Hello world from properties!
+  list:
+    values: One,Two,Three
+
+
+app:
+  name: My App frm properties
+  description: Welcome to ${app.name}
+
+#key value pair
+
+db:
+   connection: connection string frm properties
+   host: 127.0.0.1
+   port: 1200
+
+
+management.endpoints.web.exposure.include : "*"
+
+spring.cloud.config.uri: http://localhost:8888
+      

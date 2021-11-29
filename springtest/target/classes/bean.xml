@@ -6,3 +6,23 @@
 <property name="name" value ="world" />
 </bean>
 </beans>
+
+
+
+
+
+
+ <bean id ="addressbean" class ="Addressclass" >
+   <property name = "street"  value ="grandee street" ></property>
+   <property name = "city"  value ="bangalore" ></property>
+   <property name = "state"  value ="karnataka" ></property>
+   <property name = "country"  value ="India" ></property>
+   <property name = "zip"  value ="560066" ></property>
+   </bean>
+   <bean id ="customerbean" class ="Customerclass">
+   <property name = "customerId"  value ="121" ></property>
+   <property name = "customerName"  value ="harshitha" ></property>
+   <property name = "customerAddress"  ref ="addressbean" ></property>
+   <property name = "customerContact"  value ="9632456744" ></property>
+   </bean>
+   </beans>

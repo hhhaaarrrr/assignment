@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+ <!--  <bean id ="a" class ="Addressclass" >
+    <constructor-arg index ="0" value ="grandee street"> </constructor-arg>
+    <constructor-arg index="1" value ="bangalore" ></constructor-arg>
+   <constructor-arg index="2" value ="karnataka" ></constructor-arg>
+     <constructor-arg index= "3" value ="India" ></constructor-arg>
+    <constructor-arg index ="4" value ="560066" type="int" ></constructor-arg>
+   </bean>
+   <bean id ="c" class ="Customerclass">
+   <constructor-arg index="0" value ="121" type="int"></constructor-arg>
+  <constructor-arg  index="1" value ="harshitha" ></constructor-arg>
+   <constructor-arg index="2" ref ="a" ></constructor-arg>
+     <constructor-arg index="3" value ="9632456744"  type="double"></constructor-arg>
+   </bean>
+   </beans>-->
+     
+  
+<!-- using setter injection-->
+<!--  
+<bean name="address" class="Addressclass">  
+<property name="street" value ="1"> </property>  
+<property name="city"  value ="grandee"> </property>
+<property name="state"  value ="karnataka"> </property>
+<property name="zip" value ="560066"> </property>
+<property name="country" value ="India" ></property>
+</bean>  
+
+<bean name="customer" class="Customerclass">  
+<property name="customerId"> <value>7 </value> </property>  
+<property name="customerName"> <value>harshitha</value> </property>
+<property name="customerContact"> <value>987654326</value> </property>
+<property name="customerAddress" ref = "address">  </property>
+
+</bean>  
+</beans>-->
+  
+  <!-- using constructor injection -->
+  
+  <bean name="address1" class="Addressclass">  
+<constructor-arg value = "churchstreet" type = "String"></constructor-arg>
+<constructor-arg value = "whitefield" type = "String"></constructor-arg>
+<constructor-arg value = "karnataka" type = "String"></constructor-arg>
+<constructor-arg value = "441906" type = "int"></constructor-arg>
+<constructor-arg value = "India" type = "String"></constructor-arg>
+</bean>
+
+<bean name="customer1" class="Customerclass">  
+<constructor-arg value = "467" type = "int"></constructor-arg>
+<constructor-arg value = "harshitha" type = "String"></constructor-arg>
+<constructor-arg value = "987654326" type = "double"></constructor-arg>
+<constructor-arg ref = "address1" ></constructor-arg>
+</bean>  
+</beans>

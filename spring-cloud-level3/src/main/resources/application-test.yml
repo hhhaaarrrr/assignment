@@ -1,0 +1,19 @@
+my:
+  greeting: Hello world!
+  list:
+    values: One,Two,Three
+
+
+app:
+  name: My App
+  description: Welcome to ${app.name}
+
+#key value pair
+
+db:
+  connection: "{connect-test-String:'http//________',userName:'foo',password:'pass'}"
+  host: 127.0.0.1
+  port: 1400
+
+
+management.endpoints.web.exposure.include : "*"

@@ -11,7 +11,7 @@ public class mainemployee {public static void main(String[] args) {
 	switch(n) {
 	case 1:
 		TreeSet<employee> tree=new TreeSet<>(new MyIdComp());
-		tree.add(new employee(23,"Bhartesh","CSE",40000));
+		tree.add(new employee(23,"Bharth","CSE",40000));
 		tree.add(new employee(12,"Siddu","ME",60000));
 		tree.add(new employee(24,"Abhsy","ECE",30000));
 		tree.add(new employee(21,"Harshita","CE",40000));
@@ -25,7 +25,7 @@ public class mainemployee {public static void main(String[] args) {
 		break;
 	case 2:
 		TreeSet<employee> tree1=new TreeSet<>(new MyNameComp());
-		tree1.add(new employee(23,"Bhartesh","CSE",40000));
+		tree1.add(new employee(23,"Bharth","CSE",40000));
 		tree1.add(new employee(12,"Siddu","ME",60000));
 		tree1.add(new employee(24,"Abhsy","ECE",30000));
 		tree1.add(new employee(21,"Harshita","CE",40000));
@@ -39,7 +39,7 @@ public class mainemployee {public static void main(String[] args) {
 		break;
 	case 3:
 		TreeSet<employee> tree2=new TreeSet<>(new MyDeptComp());
-		tree2.add(new employee(23,"Bhartesh","CSE",40000));
+		tree2.add(new employee(23,"Bharth","CSE",40000));
 		tree2.add(new employee(12,"Siddu","ME",60000));
 		tree2.add(new employee(24,"Abhsy","ECE",30000));
 		tree2.add(new employee(21,"Harshita","CE",40000));
@@ -52,7 +52,7 @@ public class mainemployee {public static void main(String[] args) {
 		}
 	case 4:
 		TreeSet<employee> tree3=new TreeSet<>(new MySalaryComp());
-		tree3.add(new employee(23,"Bhartesh","CSE",40000));
+		tree3.add(new employee(23,"Bharth","CSE",40000));
 		tree3.add(new employee(12,"Siddu","ME",60000));
 		tree3.add(new employee(24,"Abhsy","ECE",30000));
 		tree3.add(new employee(21,"Harshita","CE",40000));
